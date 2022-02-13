@@ -111,9 +111,16 @@ body{
     grid-template-columns: repeat(4,1fr);
     grid-template-areas:
     "col1 col2 col3 col4";
-    color:black;
+    color: rgb(235, 232, 232);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
+    font-size: 40px;
+    margin-top: 10px;
+    padding: 40px 20px;
+    background-image: url("https://wallpaperaccess.com/full/1354140.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .windows .col{
     height: 500px;
@@ -135,32 +142,29 @@ body{
     grid-row-gap: 5px;
 }
 .windows .col1 .col11{
-    border: 1px solid red;
     grid-area:col11;
+    background-color: #0077c8;
     
 }
 .windows .col1 .col12{
-    border: 1px solid red;
     grid-area:col12;
+    background-color: #00bdf1;
     
 }
 .windows .col1 .col13{
-    border: 1px solid red;
     grid-area:col13;
+    background-color: #da542d;
     
 }
 .windows .col1 .col14{
-    border: 1px solid red;
     grid-area:col14;
-    
+    background-color: #ae193e;
 }
 .windows .col1 .col15{
-    border: 1px solid red;
     grid-area:col15;
-    
+    background-color: #094ab2;
 }
 .windows .col1 .col16{
-    border: 1px solid red;
     grid-area:col16;
     width: 295px;
     height:102px;
@@ -185,19 +189,18 @@ img{
     grid-row-gap: 5px;
 }
 .windows .col2 .col21{
-    border: 1px solid red;
     grid-area:col21;
-    
+    background-color: #613cbc;
 }
 .windows .col2 .col22{
-    border: 1px solid red;
     grid-area:col22;
+    background-color: #009f00;
 }
 .windows .col2 .col23{
-    border: 1px solid red;
     grid-area:col23;
     height: 209px;
     line-height: 209px;
+    background-color: #2d89ef;
 }
 
 .windows .col3{
@@ -215,57 +218,54 @@ img{
     grid-row-gap: 5px;
 }
 .windows .col3 .col31{
-    border: 1px solid red;
     grid-area:col31;
-    
+    background-color: #009bad;
 }
 .windows .col3 .col32{
-    
     grid-area:col32;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas:
     "col321 col322"
     "col323 col324";
-    height:46px;
-    line-height: 46px;
+    height:48.5px;
+    line-height: 48.5px;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
+    font-size: 25px;
 }
 .windows .col3 .col32 .col321{
-    border: 1px solid red;
     grid-area:col321;
+    background-color: #b91d47;
 }
 .windows .col3 .col32 .col322{
-    border: 1px solid red;
+    background-color: #d34927;
     grid-area:col322;
 }
 .windows .col3 .col32 .col323{
-    border: 1px solid red;
+    background-color: #009600;
     grid-area:col323;
 }
 .windows .col3 .col32 .col324{
-    border: 1px solid red;
+    background-color: #9e0096;
     grid-area:col324;
 }
 .windows .col3 .col33{
-    border: 1px solid red;
+    background-color: #2d89ef;
     grid-area:col33;
     
 }
 .windows .col3 .col34{
-    border: 1px solid red;
+    background-color: #da532c;
     grid-area:col34;
     
 }
 .windows .col3 .col35{
-    border: 1px solid red;
     grid-area:col35;
     width: 295px;
     height:102px;
 }
 .windows .col3 .col36{
-    border: 1px solid red;
     grid-area:col36;
     width: 295px;
     height:102px;
@@ -286,24 +286,23 @@ img{
     grid-row-gap: 5px;
 }
 .windows .col4 .col41{
-    border: 1px solid red;
     grid-area:col41;
     height: 209px;
     line-height: 209px;
-    
+    background-color: #009a00;
 }
 .windows .col4 .col42{
-    border: 1px solid red;
+    background-color: #00869c;
     grid-area:col42;
     
 }
 .windows .col4 .col43{
-    border: 1px solid red;
+    background-color: #8e0097;
     grid-area:col43;
     
 }
 .windows .col4 .col44{
-    border: 1px solid red;
+    background-color: #d44a27;
     grid-area:col44;
     
 }
@@ -315,6 +314,7 @@ a{
     width: 55px;
     border-radius:5px;
     color:black;
+    font-size: 16px;
 }
 a:hover{
     background-color:crimson;
