@@ -1,16 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: sans-serif;
+    outline: 0;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 body{
-    width: 992px;
-    margin: 0 auto;
     height: 100vh;
     color: white;
 }
 .grid{
+    width: 992px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-areas: 
@@ -99,4 +100,223 @@ body{
 .grid .box12{
     grid-area: box12;
     background-color: #d8202e;
+}
+
+/*start.html*/
+
+.windows{
+    width:1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas:
+    "col1 col2 col3 col4";
+    color:black;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.windows .col{
+    height: 500px;
+    text-align: center;
+    line-height: 500px;
+}
+.windows .col1{
+    grid-area: col1;
+    height: 100px;
+    line-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "col11 col11"
+    "col12 col13"
+    "col14 col15"
+    "col16 col16";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.windows .col1 .col11{
+    border: 1px solid red;
+    grid-area:col11;
+    
+}
+.windows .col1 .col12{
+    border: 1px solid red;
+    grid-area:col12;
+    
+}
+.windows .col1 .col13{
+    border: 1px solid red;
+    grid-area:col13;
+    
+}
+.windows .col1 .col14{
+    border: 1px solid red;
+    grid-area:col14;
+    
+}
+.windows .col1 .col15{
+    border: 1px solid red;
+    grid-area:col15;
+    
+}
+.windows .col1 .col16{
+    border: 1px solid red;
+    grid-area:col16;
+    width: 295px;
+    height:102px;
+}
+img{
+    width:100%;
+    height:100%;
+}
+
+.windows .col2{
+    grid-area: col2;
+    height: 100px;
+    line-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas:
+    "col21"
+    "col22"
+    "col23"
+    "col23";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.windows .col2 .col21{
+    border: 1px solid red;
+    grid-area:col21;
+    
+}
+.windows .col2 .col22{
+    border: 1px solid red;
+    grid-area:col22;
+}
+.windows .col2 .col23{
+    border: 1px solid red;
+    grid-area:col23;
+    height: 209px;
+    line-height: 209px;
+}
+
+.windows .col3{
+    grid-area: col3;
+    height: 100px;
+    line-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "col31 col32"
+    "col33 col34"
+    "col35 col35"
+    "col36 col36";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.windows .col3 .col31{
+    border: 1px solid red;
+    grid-area:col31;
+    
+}
+.windows .col3 .col32{
+    
+    grid-area:col32;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "col321 col322"
+    "col323 col324";
+    height:46px;
+    line-height: 46px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.windows .col3 .col32 .col321{
+    border: 1px solid red;
+    grid-area:col321;
+}
+.windows .col3 .col32 .col322{
+    border: 1px solid red;
+    grid-area:col322;
+}
+.windows .col3 .col32 .col323{
+    border: 1px solid red;
+    grid-area:col323;
+}
+.windows .col3 .col32 .col324{
+    border: 1px solid red;
+    grid-area:col324;
+}
+.windows .col3 .col33{
+    border: 1px solid red;
+    grid-area:col33;
+    
+}
+.windows .col3 .col34{
+    border: 1px solid red;
+    grid-area:col34;
+    
+}
+.windows .col3 .col35{
+    border: 1px solid red;
+    grid-area:col35;
+    width: 295px;
+    height:102px;
+}
+.windows .col3 .col36{
+    border: 1px solid red;
+    grid-area:col36;
+    width: 295px;
+    height:102px;
+}
+
+.windows .col4{
+    grid-area: col4;
+    height: 100px;
+    line-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "col41 col41"
+    "col41 col41"
+    "col42 col42"
+    "col43 col44";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.windows .col4 .col41{
+    border: 1px solid red;
+    grid-area:col41;
+    height: 209px;
+    line-height: 209px;
+    
+}
+.windows .col4 .col42{
+    border: 1px solid red;
+    grid-area:col42;
+    
+}
+.windows .col4 .col43{
+    border: 1px solid red;
+    grid-area:col43;
+    
+}
+.windows .col4 .col44{
+    border: 1px solid red;
+    grid-area:col44;
+    
+}
+a{
+    margin: 350px 0px 0px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(115, 169, 185);
+    width: 55px;
+    border-radius:5px;
+    color:black;
+}
+a:hover{
+    background-color:crimson;
+    color:white;
 }
