@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 992px;
+    margin: 0 auto;
+    height: 100vh;
+    color: white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+    "box0 box0 box0 box3 box3 box4"
+    "box0 box0 box0 box3 box3 box6"
+    "box0 box0 box0 box3 box3 box10"
+    "box0 box0 box0 box3 box3 box12";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.grid .box{
+    text-align: center;
+    line-height:100px;
+    height:100px;
+}
+.grid .box0{
+    grid-area: box0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+    "box1 box2 box2"
+    "box5 box2 box2"
+    "box7 box8 box9"
+    "box11 box11 box11" ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+.grid .box0 .box1{
+    grid-area: box1;
+    background-color: #c9316b;
+}
+.grid .box0 .box2{
+    grid-area: box2;
+    background-color: #ca319d;
+    height: 100%;
+}
+.grid .box3{
+    height: 100%;
+    grid-area: box3;
+    background-color: #e46a5e;
+}
+.grid .box4{
+    grid-area: box4;
+    background-color: #efc437;
+}
+.grid .box0 .box5{
+    grid-area: box5;
+    background-color: #518944;
+}
+.grid .box6{
+    grid-area: box6;
+    background-color: #367c86;
+}
+.grid .box0 .box7{
+    grid-area: box7;
+    background-color: #799928;
+}
+.grid .box0 .box8{
+    grid-area: box8;
+    background-color: #468453;
+}
+.grid .box0 .box9{
+    grid-area: box9;
+    background-color: #30c9c2;
+}
+.grid .box10{
+    grid-area: box10;
+    background-color: #31c98f;
+}
+.grid .box0 .box11{
+    grid-area: box11;
+    background-color: #544079;
+}
+.grid .box0 .box11 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-size:18px;
+    margin-left: 10px;
+}
+.grid .box0 .box11 a:hover{
+    background-color: rgb(168, 88, 88);
+    color:black;
+    border-radius: 10px;
+}
+.grid .box12{
+    grid-area: box12;
+    background-color: #d8202e;
+}
